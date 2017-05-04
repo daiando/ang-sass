@@ -1,0 +1,19 @@
+@import "../../styles/_import.scss";
+
+// @include border-box-sizing;
+
+a {
+	color: $link-color;
+
+	&:hover {
+		color: lighten($link-color, 25%)
+	}
+}
+
+.main {
+	height: 80vh;
+
+	@include breakpoint($medium-screen) {
+		@include span(10 of 16);
+	}
+}

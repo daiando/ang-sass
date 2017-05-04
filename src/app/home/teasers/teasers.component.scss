@@ -1,0 +1,20 @@
+@import "../../../styles/_import.scss";
+
+@include border-box-sizing;
+.teaser {
+  height: 16vh;
+  background-color: rgba(100, 30, 100, 0.6);
+  padding: gutter(10);
+  margin: 2vh 0;
+  @include span(10 of 10);
+  @include box-shadow(rgb(85, 25, 85) 0 0 5px);
+  @include border-radius(60);
+
+  @include breakpoint($medium-screen) {
+    @include span(2 of 10);
+
+    &:nth-child(5n) {
+      @include last;
+    }
+  }
+}

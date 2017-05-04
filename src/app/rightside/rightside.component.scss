@@ -1,0 +1,12 @@
+@import "../../styles/_import.scss";
+
+.sidebar-right {
+	height: 80vh;
+	background-color: rgba(100, 100, 30, 0.6);
+	clear: both;
+
+	@include breakpoint($medium-screen) {
+		clear: none;
+		@include span(4 of 16 last);
+	}
+}

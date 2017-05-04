@@ -1,0 +1,15 @@
+@import "../../../styles/_import.scss";
+
+@include border-box-sizing;
+.content {
+  overflow: auto;
+  height: 60vh;
+  padding: 3 * gutter();
+  background-color: rgba(100, 0, 0, 0.6);
+  // @include text-shadow(#ccc 0 1px 0);
+  @include column-count(3);
+
+  p {
+    margin-top: 0;
+  }
+}

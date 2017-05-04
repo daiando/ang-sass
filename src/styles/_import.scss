@@ -1,3 +1,11 @@
 @import "../../node_modules/susy/sass/_susy.scss";
 @import "../../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "../../node_modules/compass-mixins/lib/_compass.scss";
+
+@import "./_variables.scss";
+
+$susy: (
+	columns: 16,
+	// debug: (image: show),
+  global-box-sizing: border-sizing
+);
