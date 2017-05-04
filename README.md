@@ -26,3 +26,24 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## memo (normalize-scss, susy breakpoint, compass)
+
+```
+yarn add node-sass --save
+yarn add sass-loader --save
+yarn add normalize-scss --save
+
+yarn add susy --save
+yarn add breakpoint-sass --save
+yarn add compass-mixins --save
+```
+
+## src/styles/_import.scss
+
+```
+@import "../../node_modules/susy/sass/_susy.scss";
+@import "../../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "../../node_modules/compass-mixins/lib/_compass.scss";
+```
